@@ -1,0 +1,44 @@
+/* NavbarGlass.css */
+
+.navbar-glass {
+  background: linear-gradient(120deg, rgba(138, 43, 226, 0.7), rgba(0, 191, 255, 0.6), rgba(0, 255, 127, 0.6));
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  padding: 0.5rem 1.5rem;
+  font-family: "Segoe UI", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.glow-text {
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00faff, 0 0 12px #00ffb3, 0 0 16px rgba(0, 255, 170, 0.6);
+}
+
+.navbar-glass .btn-outline-light,
+.navbar-glass .btn-outline-info {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #e0f7ff;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.navbar-glass .btn-outline-light:hover,
+.navbar-glass .btn-outline-info:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 255, 200, 0.3);
+}
+
+.navbar-glass .btn-info {
+  background: linear-gradient(145deg, #00d4ff, #00ffb3);
+  border: none;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 0 12px rgba(0, 255, 191, 0.6);
+}

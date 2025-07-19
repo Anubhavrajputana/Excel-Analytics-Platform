@@ -1,0 +1,25 @@
+/* Upload.css */
+.upload-bg {
+  background: linear-gradient(135deg, #0f2027, #2c5364, #203a43);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Icons container */
+.floating-icons .float-icon {
+  position: absolute;
+  width: 40px;
+  opacity: 0.2;
+  animation: float 12s infinite ease-in-out;
+}
+
+.icon1 { top: 10%; left: 5%; animation-delay: 0s; }
+.icon2 { top: 40%; left: 90%; animation-delay: 2s; }
+.icon3 { top: 70%; left: 10%; animation-delay: 4s; }
+.icon4 { top: 30%; left: 60%; animation-delay: 6s; }
+
+@keyframes float {
+  0%   { transform: translateY(0) rotate(0deg); }
+  50%  { transform: translateY(-30px) rotate(15deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
