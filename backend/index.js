@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import { OpenAI } from "openai";
 import jwt from "jsonwebtoken";
+import validateEnv from "./utils/envValidator.js";
 
 // Models
 import Summary from "./models/Summary.js";
@@ -18,10 +19,12 @@ import dashboardRoutes from "./routes/dashboard.js";
 import adminRoutes from "./routes/admin.js";
 import { verifyToken } from "./middleware/verifyToken.js";
 
+// Load and validate environment variables
 dotenv.config();
+validateEnv();
 
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/excel_ai";
+const MONGO_URI = process.env.MONGODB_URI || process.env.MONGO_URI || "mongodb://127.0.0.1:27017/excel_ai";
 const app = express();
 
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FiBarChart2, FiUpload, FiUsers } from "react-icons/fi";
 import { toast } from "react-toastify";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/Dashboard.css"; // custom CSS for floating icons
+import "../styles/Dashboard.css";
 
 const Dashboard = () => {
   const [stats, setStats] = useState({ uploads: 0, charts: 0, users: 0 });
@@ -109,7 +109,7 @@ const Dashboard = () => {
           <StatCard
             icon={<FiUpload size={36} className="text-primary" />}
             label="Total Uploads"
-            value={stats.uploaded}
+            value={stats.uploads}
             color="primary"
           />
           <StatCard

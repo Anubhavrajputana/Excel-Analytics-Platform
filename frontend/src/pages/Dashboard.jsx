@@ -3,7 +3,7 @@ import { FaFileExcel, FaUsers, FaChartBar } from "react-icons/fa";
 import jwt_decode from "jwt-decode";
 import { toast } from "react-toastify";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Dashboard.css";
+import "../styles/Dashboard.css";
 
 const Dashboard = () => {
   const [userEmail, setUserEmail] = useState("");
